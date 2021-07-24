@@ -1,11 +1,12 @@
 export class AppActions {
-  static SET_APP = '[Config] SET_APP';
-  static GET_APP_SUCCESS = '[Config] GET_APP_SUCCESS';
-  static setApp = () => ({
-    type: AppActions.SET_APP
+  static SET_RES = '[Config] SET_RES';
+  static GET_OPERATION = '[Config] GET_OPERATION';
+  static setRes = payload => ({
+    type: AppActions.SET_RES,
+    payload
   });
-  static getAppSuccess = payload => ({
-    type: AppActions.GET_APP_SUCCESS,
+  static getOperation = payload => ({
+    type: AppActions.GET_OPERATION,
     payload
   });
 }

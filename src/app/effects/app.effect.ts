@@ -13,18 +13,4 @@ export class AppEffect {
   ) {
   }
 
-  @Effect()
-  getApp$ = this.actions$.pipe(
-    ofType(AppActions.SET_APP),
-    take(1),
-    switchMap<any, any>(data =>
-      this.appService.getApp().pipe(
-        switchMap(res => of(AppActions.getAppSuccess(res))),
-        catchError(err => {
-          return of();
-        })
-      )
-    )
-  );
-
 }

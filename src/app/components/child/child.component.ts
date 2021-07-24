@@ -1,4 +1,7 @@
-import {Component, Input} from '@angular/core';
+import {
+  Component,
+} from '@angular/core';
+import {AppService} from '../../services/app.service';
 
 @Component({
   selector: 'app-child',
@@ -6,5 +9,6 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./child.component.scss'],
 })
 export class ChildComponent {
-  @Input() result: number;
+  constructor(public appService: AppService) {
+  }
 }

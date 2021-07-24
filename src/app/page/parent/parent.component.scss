@@ -42,7 +42,8 @@
       font-family: fantasy;
       font-weight: 100;
       line-height: 1.1;
-      &:focus, &:hover{
+      transform: scale(1.0);
+      &:active{
         transform: scale(1.05);
       }
     }

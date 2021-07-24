@@ -8,4 +8,16 @@
   font-family: fantasy;
   font-weight: 100;
   color: $color-white-gray;
+  position: relative;
+  &__operation {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -5,12 +5,12 @@
      <div class="calculator__box">
        <h1>Calculadora</h1>
        <div class="calculator__screen">
-         <app-child [result]="response"></app-child>
+         <app-child></app-child>
        </div>
        <div class="calculator__keys">
          <div class="row no-gutters">
            <div class="col-3" *ngFor="let key of keys">
-             <button >{{key.label}}</button>
+             <button (click)="eventCal(key)" [disabled]="response === '0' && key?.type !== 'number'">{{key?.label}}</button>
            </div>
          </div>
        </div>

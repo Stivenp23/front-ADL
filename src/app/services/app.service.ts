@@ -1,13 +1,14 @@
 import {Injectable} from '@angular/core';
-import {of} from 'rxjs';
+import {Observable} from 'rxjs';
+import {Store} from '@ngrx/store';
+
 @Injectable({
   providedIn: 'root',
 })
 export class AppService {
-  constructor() {
-  }
+  res$: Observable<any> = this.store.select('calculator', 'res')
+  operation$: Observable<any> = this.store.select('calculator', 'operation')
 
-  getApp() {
-    return of([]);
+  constructor(private store: Store<any>) {
   }
 }
