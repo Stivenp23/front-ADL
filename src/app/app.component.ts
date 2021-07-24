@@ -6,9 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Prueba Front';
-  tooltips = ['terrible', 'bad', 'normal', 'good', 'wonderful'];
-  value = 3;
+  title = 'Prueba ADL';
   constructor() {
   }
 }

@@ -3,7 +3,6 @@ import {InjectionToken, LOCALE_ID, NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {CommonModule} from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {NzRateModule} from 'ng-zorro-antd/rate';
 
 // Components
 import {AppComponent} from './app.component';
@@ -46,8 +45,7 @@ export const reducerToken = new InjectionToken<ActionReducerMap<State<reducers.A
     BrowserAnimationsModule,
     NgbModalModule,
     NgbNavModule,
-    ReactiveFormsModule,
-    NzRateModule
+    ReactiveFormsModule
   ],
   providers: [
     {provide: 'ENV', useValue: environment},

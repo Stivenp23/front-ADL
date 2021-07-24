@@ -1,3 +1,21 @@
 <app-header></app-header>
-<app-child></app-child>
+<section class="calculator">
+  <div class="container">
+    <div class="calculator__content">
+     <div class="calculator__box">
+       <h1>Calculadora</h1>
+       <div class="calculator__screen">
+         <app-child [result]="response"></app-child>
+       </div>
+       <div class="calculator__keys">
+         <div class="row no-gutters">
+           <div class="col-3" *ngFor="let key of keys">
+             <button >{{key.label}}</button>
+           </div>
+         </div>
+       </div>
+     </div>
+    </div>
+  </div>
+</section>
 <app-footer></app-footer>

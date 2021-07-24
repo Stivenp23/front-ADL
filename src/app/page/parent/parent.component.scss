@@ -1,1 +1,50 @@
 @import '../../../scss/index';
+
+.calculator {
+  height: 90vh;
+  .container{
+    height: 100%;
+  }
+  &__content{
+    height: 100%;
+    @include display-align(flex, center, center);
+  }
+  &__box{
+    width: 100%;
+    padding: 1.5rem;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: $color-gray-opacity;
+    color: $color-white;
+    border-radius: 1rem;
+    h1{
+      text-align: center;
+      font-family: fantasy;
+      color: $color-gray;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      line-height: 1.1;
+    }
+  }
+  &__screen{
+    background-color: $color-white;
+    color: $color-black;
+    margin-bottom: 1.2rem;
+  }
+  &__keys{
+    button{
+      width: 100%;
+      height: 100%;
+      min-height: 50px;
+      background-color: $color-white;
+      border: 3px solid $color-gray-opacity;
+      color: $color-white-gray;
+      font-family: fantasy;
+      font-weight: 100;
+      line-height: 1.1;
+      &:focus, &:hover{
+        transform: scale(1.05);
+      }
+    }
+  }
+}

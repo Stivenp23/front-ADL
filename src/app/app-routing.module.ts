@@ -1,11 +1,11 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {ChildComponent} from './components/child/child.component';
+import {ParentComponent} from './page/parent/parent.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: ChildComponent,
+    component: ParentComponent,
   },
 ];
 
